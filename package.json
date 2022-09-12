@@ -1,9 +1,9 @@
 {
 	"name": "food-recipe-app",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"type": "module",
-	"homepage": "https://olaoluwavincent.github.io/Food-Recipe-App/",
+	"homepage": "https://olaoluwavincent.github.io/Food-Recipe-App",
 	"scripts": {
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
