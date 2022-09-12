@@ -10,7 +10,7 @@ function Pages() {
 	return (
 		<AnimatePresence mode='wait'>
 			<Routes location={location} key={location.pathname}>
-				<Route path='/food-recipe-app' element={<Home />} />
+				<Route path='/' element={<Home />} />
 				<Route
 					exact
 					path='/food-recipe-app/cuisine/:type'
