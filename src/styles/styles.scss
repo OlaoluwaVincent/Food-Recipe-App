@@ -1,0 +1,32 @@
+// Partial Imports
+@use 'app';
+@use 'header';
+@use 'search';
+@use 'variables' as v;
+@use 'category';
+@use 'popular';
+@use 'veggie';
+@use 'cuisine';
+@use 'recipe';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.link {
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	&:hover {
+		color: #f27171;
+	}
+}

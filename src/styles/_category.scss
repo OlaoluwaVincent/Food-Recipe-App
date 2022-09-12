@@ -1,0 +1,64 @@
+.category {
+	display: flex;
+	justify-content: center;
+	&--content {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 2rem 0rem;
+		gap: 2rem;
+	}
+	&--link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		border-radius: 50%;
+		background: linear-gradient(35deg, #494949, #313131);
+		text-decoration: none;
+		width: 6rem;
+		height: 6rem;
+		cursor: pointer;
+
+		h4 {
+			color: white;
+			font-size: 0.8rem;
+		}
+
+		svg {
+			color: white;
+			font-size: 1.5rem;
+		}
+
+		&:hover {
+			background: linear-gradient(to right, #f27171, #e94057);
+
+			svg {
+				color: white;
+			}
+			h4 {
+				color: white;
+			}
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		&--content {
+			justify-content: center;
+			margin: 1rem 0;
+			gap: 10px;
+		}
+		&--link {
+			margin-right: 0rem;
+			text-decoration: none;
+			width: 4rem;
+			height: 4rem;
+			justify-content: space-around;
+			padding: 0.7rem;
+			svg {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

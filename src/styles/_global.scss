@@ -1,0 +1,72 @@
+@mixin gradient {
+	z-index: 3;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+@mixin card {
+	min-height: 25rem;
+	border-radius: 2rem;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+
+	img {
+		border-radius: 2rem;
+		position: absolute;
+		left: 0;
+		height: 100%;
+		object-fit: cover;
+	}
+	p {
+		position: absolute;
+		z-index: 10;
+		left: 50%;
+		bottom: 20%;
+		transform: translate(-50%, 20%);
+		color: white;
+		width: 100%;
+		text-align: center;
+		font-weight: 600;
+		font-size: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@mixin wrapper {
+	margin: 4rem 0rem;
+}
+
+@mixin cardGrid {
+	img {
+		width: 100%;
+		border-radius: 2rem;
+		object-fit: cover;
+		filter: grayscale(20%);
+		transition: filter 200ms ease-in-out;
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+
+	h4 {
+		text-align: center;
+		padding: 1rem 0;
+	}
+	@media only screen and (max-width: 600px) {
+		h4 {
+			padding: 0.6rem 0;
+			font-size: 16px;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+
+@mixin grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit);
+}

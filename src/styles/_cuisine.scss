@@ -1,0 +1,10 @@
+@use 'global' as g;
+
+.cuisine {
+	&--grid {
+		@include g.grid;
+	}
+	&--grid-card {
+		@include g.cardGrid;
+	}
+}

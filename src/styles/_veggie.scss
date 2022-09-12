@@ -1,0 +1,15 @@
+@use 'global' as g;
+.veggie {
+	h3 {
+		margin-bottom: 1rem;
+	}
+	&--wrapper {
+		@include g.wrapper;
+	}
+	&--card {
+		@include g.card;
+	}
+	&--gradient {
+		@include g.gradient;
+	}
+}
