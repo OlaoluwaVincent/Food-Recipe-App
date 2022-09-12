@@ -24,8 +24,6 @@ const Searched = () => {
 		getSearched(params.search);
 	}, [params.search]);
 
-	console.log(search);
-
 	//////////////
 	return !search ? (
 		<Loading />
@@ -35,7 +33,10 @@ const Searched = () => {
 				{search.map((res) => {
 					return (
 						<div className='cuisine--grid-card' key={res.id}>
-							<Link to={`/recipe/${res.id}`} className='link'>
+							<Link
+								to={`/food-recipe-app/recipe/${res.id}`}
+								className='link'
+							>
 								<img src={res.image} alt='not available' />
 								<h4>{res.title}</h4>
 								<p>{res.details}</p>

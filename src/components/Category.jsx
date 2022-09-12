@@ -5,19 +5,31 @@ const Category = () => {
 	return (
 		<section className='category'>
 			<div className='category--content'>
-				<Link className='category--link' to={'/cuisine/Italian'}>
+				<Link
+					className='category--link'
+					to={'/food-recipe-app/cuisine/Italian'}
+				>
 					<FaPizzaSlice />
 					<h4>Italian</h4>
 				</Link>
-				<Link className='category--link' to={'/cuisine/American'}>
+				<Link
+					className='category--link'
+					to={'/food-recipe-app/cuisine/American'}
+				>
 					<FaHamburger />
 					<h4>American</h4>
 				</Link>
-				<Link className='category--link' to={'/cuisine/Thai'}>
+				<Link
+					className='category--link'
+					to={'/food-recipe-app/cuisine/Thai'}
+				>
 					<GiNoodles />
 					<h4>Thai</h4>
 				</Link>
-				<Link className='category--link' to={'/cuisine/African'}>
+				<Link
+					className='category--link'
+					to={'/food-recipe-app/cuisine/African'}
+				>
 					<GiNigeria />
 					<h4>African</h4>
 				</Link>

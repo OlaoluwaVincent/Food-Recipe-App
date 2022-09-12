@@ -9,7 +9,7 @@ const Search = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		navigate(`/searched/${input}`);
+		navigate(`/food-recipe-app/searched/${input}`);
 
 		setInput('');
 	};

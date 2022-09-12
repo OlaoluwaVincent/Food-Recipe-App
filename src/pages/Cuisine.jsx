@@ -39,7 +39,10 @@ const Cuisine = () => {
 			{cuisine.map((item) => {
 				return (
 					<div className='cuisine--grid-card' key={item.id}>
-						<Link className='link' to={`/recipe/${item.id}`}>
+						<Link
+							className='link'
+							to={`/food-recipe-app/recipe/${item.id}`}
+						>
 							<img src={item.image} alt='' />
 							<h4>{item.title}</h4>
 						</Link>

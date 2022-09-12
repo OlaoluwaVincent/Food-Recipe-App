@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 		<nav className='Header header--nav'>
 			<GiKnifeFork />
-			<Link to={'/'} className='header--nav-link'>
+			<Link to={'/food-recipe-app'} className='header--nav-link'>
 				Ola's Menu
 			</Link>
 		</nav>

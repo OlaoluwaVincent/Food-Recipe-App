@@ -10,10 +10,22 @@ function Pages() {
 	return (
 		<AnimatePresence mode='wait'>
 			<Routes location={location} key={location.pathname}>
-				<Route path='/' element={<Home />} />
-				<Route path='/cuisine/:type' element={<Cuisine />} />
-				<Route path='/Searched/:search' element={<Searched />} />
-				<Route path='/Recipe/:id' element={<Recipe />} />
+				<Route path='/food-recipe-app' element={<Home />} />
+				<Route
+					exact
+					path='/food-recipe-app/cuisine/:type'
+					element={<Cuisine />}
+				/>
+				<Route
+					exact
+					path='/food-recipe-app/Searched/:search'
+					element={<Searched />}
+				/>
+				<Route
+					exact
+					path='/food-recipe-app/Recipe/:id'
+					element={<Recipe />}
+				/>
 			</Routes>
 		</AnimatePresence>
 	);

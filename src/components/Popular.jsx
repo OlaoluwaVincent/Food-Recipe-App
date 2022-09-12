@@ -47,7 +47,7 @@ const Popular = () => {
 									<div className='popular--card'>
 										<Link
 											className='link'
-											to={`/recipe/${recipe.id}`}
+											to={`/food-recipe-app/recipe/${recipe.id}`}
 										>
 											<p>{recipe.title}</p>
 											<img

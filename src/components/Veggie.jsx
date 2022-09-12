@@ -48,7 +48,7 @@ const Veggie = () => {
 								<SplideSlide key={recipe.id}>
 									<div className='veggie--card'>
 										<Link
-											to={`/recipe/${recipe.id}`}
+											to={`/food-recipe-app/recipe/${recipe.id}`}
 											className='link'
 										>
 											<p>{recipe.title}</p>
